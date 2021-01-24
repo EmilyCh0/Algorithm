@@ -5,18 +5,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 public class BOJ_1080 {
-	static int[][] arrA;	// AÇà·Ä
-	static int[][] arrB;	// BÇà·Ä
-	static int cnt;		//ÃÖÁ¾ Ãâ·Â °ª
+	static int[][] arrA;	// Aí–‰ë ¬
+	static int[][] arrB;	// Bí–‰ë ¬
+	static int cnt;		//ìµœì¢… ì¶œë ¥ ê°’
 	
-	public static void func(int r, int c) {	// (r,c) ±âÁØÀ¸·Î 3x3 µÚÁý±â 
-		if(arrA[r][c]!=arrB[r][c]) {	// (r,c)°¡ ´Ù¸¦¶§¸¸ µÚÁý±â
+	public static void func(int r, int c) {	// (r,c) ê¸°ì¤€ìœ¼ë¡œ 3x3 ë’¤ì§‘ê¸° 
+		if(arrA[r][c]!=arrB[r][c]) {	// (r,c)ê°€ ë‹¤ë¥¼ë•Œë§Œ ë’¤ì§‘ê¸°
 			for(int i=r;i<r+3;i++) {
 				for(int j=c;j<c+3;j++) {
-					arrA[i][j]=arrA[i][j]==0?1:0;		// 0ÀÌ¸é 1·Î, ¾Æ´Ï¸é 0À¸·Î
+					arrA[i][j]=arrA[i][j]==0?1:0;		// 0ì´ë©´ 1ë¡œ, ì•„ë‹ˆë©´ 0ìœ¼ë¡œ
 				}
 			}
-			cnt++;	// µÚÁýÀº È½¼ö +1
+			cnt++;	// ë’¤ì§‘ì€ íšŸìˆ˜ +1
 		}
 		else return;
 	}
@@ -48,7 +48,7 @@ public class BOJ_1080 {
 				func(i,j);
 			}
 		}
-		boolean check=true;		// A,B°¡ ¶È°°ÀºÁö È®ÀÎ
+		boolean check=true;		// A,Bê°€ ë˜‘ê°™ì€ì§€ í™•ì¸
 		for(int i=0;i<N;i++) {
 			for(int j=0;j<M;j++) {
 				if(arrA[i][j]!=arrB[i][j]) {
