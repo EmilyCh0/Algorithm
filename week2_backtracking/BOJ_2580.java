@@ -37,14 +37,14 @@ public class BOJ_2580 {
 			int c=emptyC[k];
 			if(check) {
 				for(int i=0;i<9;i++) {
-					if(row[r][i]==false&&col[c][i]==false&&squ[(r/3)*3+c/3][i]==false) {	// °¡·Î, ¼¼·Î, »ç°¢Çü ¸ðµÎ i¸¦ »ç¿ë ¾ÈÇßÀ¸¸é
-						// »ç¿ëÇß´Ù°í Ç¥½Ã
+					if(row[r][i]==false&&col[c][i]==false&&squ[(r/3)*3+c/3][i]==false) {	// ê°€ë¡œ, ì„¸ë¡œ, ì‚¬ê°í˜• ëª¨ë‘ ië¥¼ ì‚¬ìš© ì•ˆí–ˆìœ¼ë©´
+						// ì‚¬ìš©í–ˆë‹¤ê³  í‘œì‹œ
 						row[r][i]=true;
 						col[c][i]=true;
 						squ[(r/3)*3+c/3][i]=true;
 						arr[r][c]=i+1;
 						backtrack(k+1);
-						// »ç¿ë¾ÈÇÑ °æ¿ì·Î ´Ù½Ã ¿Ã¶ó°¡±â
+						// ì‚¬ìš©ì•ˆí•œ ê²½ìš°ë¡œ ë‹¤ì‹œ ì˜¬ë¼ê°€ê¸°
 						row[r][i]=false;
 						col[c][i]=false;
 						squ[(r/3)*3+c/3][i]=false;
