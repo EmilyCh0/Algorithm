@@ -20,7 +20,7 @@ public class BOJ_12865 {
 		for(int i=1;i<N+1;i++) {
 			for(int j=1;j<K+1;j++) {
 				dp[i][j]=dp[i-1][j];
-				if(j-arrW[i]>=0) {
+				if(j-arrW[i]>=0) {	// arrW[i] 무게만큼 넣을 수 있는 무게를 판단할때...
 					dp[i][j]=Math.max(dp[i-1][j], dp[i-1][j-arrW[i]]+arrV[i]);
 				}
 			}

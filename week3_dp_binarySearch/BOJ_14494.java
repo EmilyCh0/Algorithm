@@ -9,7 +9,8 @@ public class BOJ_14494 {
 		int[][] arr = new int[N][M];
 		for(int i=0;i<N;i++) {
 			for(int j=0;j<M;j++) {
-				if(i!=0&&j!=0) {
+				if(i!=0&&j!=0) {	
+					// 가로,세로 첫째줄이 아닌 경우 arr[i-1][j]+arr[i][j-1]+arr[i-1][j-1]
 					long tmp = (arr[i-1][j]+arr[i][j-1])%1000000007;
 					tmp = (tmp+arr[i-1][j-1])%1000000007;
 					arr[i][j]=(int) tmp;
