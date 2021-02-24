@@ -4,7 +4,7 @@ import java.util.*;
 public class BOJ_1487{
    public static void main(String[] args) {
       Scanner s=new Scanner(System.in);
-      int n=s.nextInt(); //ÀÎ¿ø
+      int n=s.nextInt(); //ì¸ì›
       int [][]arr=new int[n][2]; 
       
       for(int i=0;i<n;i++) {
@@ -14,13 +14,13 @@ public class BOJ_1487{
       int [] mon=new int[n];
       int [] tmp=new int[n];
       for(int i=0;i<n;i++) {
-         int st=arr[i][0]; //¿ø°¡°İ
+         int st=arr[i][0]; //ì›ê°€ê²©
          int sum=0;
          
          for(int j=0;j<n;j++) {
             if(arr[j][0]>=st && st-arr[j][1]>=0) {
-               //±âÁØº¸´Ù °ªÀÌ ³ô´Ù => »ç°Ú´Ù
-               //±âÁØ¿¡¼­ ¹è¼Ûºñ »« °ªÀÌ 0º¸´Ù Ä¿¾ßÇÔ
+               //ê¸°ì¤€ë³´ë‹¤ ê°’ì´ ë†’ë‹¤ => ì‚¬ê² ë‹¤
+               //ê¸°ì¤€ì—ì„œ ë°°ì†¡ë¹„ ëº€ ê°’ì´ 0ë³´ë‹¤ ì»¤ì•¼í•¨
                sum+= st-arr[j][1];
             }
          }
@@ -29,9 +29,9 @@ public class BOJ_1487{
       }
       
       Arrays.sort(tmp);
-      int max=tmp[n-1]; //ÃÖ´ëÀÎ ÀÌÀÍ
+      int max=tmp[n-1]; //ìµœëŒ€ì¸ ì´ìµ
       
-      int result=0; //ÀÌÀÍÀÌ ÃÖ´ëÀÎ °¡°İÀÌ ¿©·¯°³ÀÏ¶§ °¡Àå ³·Àº °¡°İÀ» Ã£±â À§ÇÑ ÀÎµ¦½º Ã£±â
+      int result=0; //ì´ìµì´ ìµœëŒ€ì¸ ê°€ê²©ì´ ì—¬ëŸ¬ê°œì¼ë•Œ ê°€ì¥ ë‚®ì€ ê°€ê²©ì„ ì°¾ê¸° ìœ„í•œ ì¸ë±ìŠ¤ ì°¾ê¸°
       int min=-1;
       
       for(int i=0;i<n;i++) {
@@ -57,9 +57,9 @@ public class BOJ_1487 {
 
    public static void main(String[] args) {
       Scanner s=new Scanner(System.in);
-      int n=s.nextInt(); //ÀÎ¿ø
-      int []arr=new int[n]; //¿ø·¡ ¹Ş´Â°Å
-      int []arr2=new int[n]; //¹è¼Ûºñ »«°Å
+      int n=s.nextInt(); //ì¸ì›
+      int []arr=new int[n]; //ì›ë˜ ë°›ëŠ”ê±°
+      int []arr2=new int[n]; //ë°°ì†¡ë¹„ ëº€ê±°
       
       for(int i=0;i<n;i++) {
          int a=s.nextInt();
@@ -70,7 +70,7 @@ public class BOJ_1487 {
       
 
       int mon[]=new int [n];
-      int tmp[]=new int[n]; //Á¤·ÄÇÒ¶ó°í
+      int tmp[]=new int[n]; //ì •ë ¬í• ë¼ê³ 
       for(int i=0;i<n;i++) {
          if(arr2[i]<=0) mon[i]=0;
          else {
@@ -79,13 +79,13 @@ public class BOJ_1487 {
          }
       }
       
-      Arrays.sort(tmp); //Á¤·ÄÇØ¼­ °¡Àå Å« °ª Ã£±â (ÀÌÀ±)
+      Arrays.sort(tmp); //ì •ë ¬í•´ì„œ ê°€ì¥ í° ê°’ ì°¾ê¸° (ì´ìœ¤)
       
 //      for(int i=0;i<n;i++) System.out.print(tmp[i]+ " ");
 //      System.out.println();
       
-      int max =tmp[n-1]; //ÃÖ´ë
-      int result=0; //ÀÌÀÍÀÌ ÃÖ´ëÀÎ °¡°İÀÌ ¿©·¯°³ÀÏ¶§ °¡Àå ³·Àº °¡°İÀ» Ã£±â À§ÇÑ ÀÎµ¦½º Ã£±â
+      int max =tmp[n-1]; //ìµœëŒ€
+      int result=0; //ì´ìµì´ ìµœëŒ€ì¸ ê°€ê²©ì´ ì—¬ëŸ¬ê°œì¼ë•Œ ê°€ì¥ ë‚®ì€ ê°€ê²©ì„ ì°¾ê¸° ìœ„í•œ ì¸ë±ìŠ¤ ì°¾ê¸°
       
       for(int i=0;i<n;i++) {
          if(mon[i]==max) {
