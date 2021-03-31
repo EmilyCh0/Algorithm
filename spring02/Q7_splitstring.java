@@ -42,7 +42,7 @@ public class Q7_splitstring {
 		String[] ans=new String[idx];
 		for(int i=0;i<idx;i++) {
 			ans[i]=arr[i];
-			// ½ÇÁ¦ ¹®Á¦¿¡¼­´Â ¾Æ·¡ Ãâ·ÂºÎºÐ ¾øÀÌ ¸¶Áö¸·¿¡ ans[]¸¦ ¸®ÅÏ
+			// ì‹¤ì œ ë¬¸ì œì—ì„œëŠ” ì•„ëž˜ ì¶œë ¥ë¶€ë¶„ ì—†ì´ ë§ˆì§€ë§‰ì— ans[]ë¥¼ ë¦¬í„´
 			System.out.print("\""+ans[i]+"\" ");
 		}
 	}
