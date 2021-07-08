@@ -50,7 +50,7 @@ int Q3() {
 
 
 /*
-// queue �ð� �ʰ�
+// queue ½Ã°£ ÃÊ°ú
 #include "header.h"
 #include <iostream>
 #include <queue>
