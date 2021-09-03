@@ -1,4 +1,3 @@
-//ÇÁ·Î±×·¡¸Ó½º¿¡¼­´Â mainÇÔ¼ö ¹× ÀÔÃâ·Â¹®ÀÌ ÇÊ¿äÇÏÁö ¾Ê½À´Ï´Ù. ´ë½Å solutionÇÔ¼ö¸¸ ÀÛ¼ºÇÏ¸é µË´Ï´Ù.
 
 #include <iostream>
 #include <vector>
@@ -7,7 +6,7 @@ using namespace std;
 
 vector<string> solution(int r, int c, int zr, int zc, vector<string> words) {
 	vector<string> answer;
-	// ÄÚµå¸¦ ÀÛ¼ºÇØÁÖ¼¼¿ä.
+	
 
 	for (int i = 0;i<r;i++) {
 		string ansstr = "";
@@ -41,7 +40,7 @@ int epper14_7() {
 		cin >> temp;
 		if (temp.length()>c)
 		{
-			cout << "ÀÔ·Â ¹üÀ§¸¦ ÃÊ°úÇÏ¿´½À´Ï´Ù.\n";
+			cout << "ì…ë ¥ ë²”ìœ„ë¥¼ ì´ˆê³¼í•˜ì˜€ìŠµë‹ˆë‹¤.\n";
 			exit(1);
 		}
 		words.push_back(temp);
