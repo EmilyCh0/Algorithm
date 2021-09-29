@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <queue>
+#include <algorithm>
 using namespace std;
 int n;
 vector<vector<char>> map;
@@ -63,7 +64,10 @@ int main() {
 		}
 	}
 	cout << cnt << '\n';
+	sort(ans.begin(), ans.end());
 	for (int i = 0;i < cnt;i++) {
 		cout << ans[i] << '\n';
 	}
+
+	return 0;
 }
